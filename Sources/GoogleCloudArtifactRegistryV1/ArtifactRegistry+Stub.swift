@@ -29,35 +29,35 @@ extension Clients {
   protocol ArtifactRegistryStub {
     func listDockerImages(
       request: ListDockerImagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListDockerImagesResponse
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListDockerImagesResponse
 
     func getDockerImage(
       request: GetDockerImageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.DockerImage
+    ) async throws -> GoogleCloudArtifactRegistryV1.DockerImage
 
     func listMavenArtifacts(
       request: ListMavenArtifactsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListMavenArtifactsResponse
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListMavenArtifactsResponse
 
     func getMavenArtifact(
       request: GetMavenArtifactRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.MavenArtifact
+    ) async throws -> GoogleCloudArtifactRegistryV1.MavenArtifact
 
     func listNpmPackages(
       request: ListNpmPackagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListNpmPackagesResponse
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListNpmPackagesResponse
 
     func getNpmPackage(
       request: GetNpmPackageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.NpmPackage
+    ) async throws -> GoogleCloudArtifactRegistryV1.NpmPackage
 
     func listPythonPackages(
       request: ListPythonPackagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListPythonPackagesResponse
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListPythonPackagesResponse
 
     func getPythonPackage(
       request: GetPythonPackageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.PythonPackage
+    ) async throws -> GoogleCloudArtifactRegistryV1.PythonPackage
 
     func importAptArtifacts(
       request: ImportAptArtifactsRequest, options: GoogleCloudGax.RequestOptions
@@ -69,11 +69,11 @@ extension Clients {
 
     func listRepositories(
       request: ListRepositoriesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListRepositoriesResponse
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListRepositoriesResponse
 
     func getRepository(
       request: GetRepositoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Repository
+    ) async throws -> GoogleCloudArtifactRegistryV1.Repository
 
     func createRepository(
       request: CreateRepositoryRequest, options: GoogleCloudGax.RequestOptions
@@ -81,7 +81,7 @@ extension Clients {
 
     func updateRepository(
       request: UpdateRepositoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Repository
+    ) async throws -> GoogleCloudArtifactRegistryV1.Repository
 
     func deleteRepository(
       request: DeleteRepositoryRequest, options: GoogleCloudGax.RequestOptions
@@ -89,11 +89,11 @@ extension Clients {
 
     func listPackages(
       request: ListPackagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListPackagesResponse
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListPackagesResponse
 
     func getPackage(
       request: GetPackageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Package
+    ) async throws -> GoogleCloudArtifactRegistryV1.Package
 
     func deletePackage(
       request: DeletePackageRequest, options: GoogleCloudGax.RequestOptions
@@ -101,11 +101,11 @@ extension Clients {
 
     func listVersions(
       request: ListVersionsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListVersionsResponse
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListVersionsResponse
 
     func getVersion(
       request: GetVersionRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Version
+    ) async throws -> GoogleCloudArtifactRegistryV1.Version
 
     func deleteVersion(
       request: DeleteVersionRequest, options: GoogleCloudGax.RequestOptions
@@ -117,15 +117,15 @@ extension Clients {
 
     func updateVersion(
       request: UpdateVersionRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Version
+    ) async throws -> GoogleCloudArtifactRegistryV1.Version
 
     func listFiles(
       request: ListFilesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListFilesResponse
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListFilesResponse
 
     func getFile(
       request: GetFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.File
+    ) async throws -> GoogleCloudArtifactRegistryV1.File
 
     func deleteFile(
       request: DeleteFileRequest, options: GoogleCloudGax.RequestOptions
@@ -133,23 +133,23 @@ extension Clients {
 
     func updateFile(
       request: UpdateFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.File
+    ) async throws -> GoogleCloudArtifactRegistryV1.File
 
     func listTags(
       request: ListTagsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListTagsResponse
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListTagsResponse
 
     func getTag(
       request: GetTagRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Tag
+    ) async throws -> GoogleCloudArtifactRegistryV1.Tag
 
     func createTag(
       request: CreateTagRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Tag
+    ) async throws -> GoogleCloudArtifactRegistryV1.Tag
 
     func updateTag(
       request: UpdateTagRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Tag
+    ) async throws -> GoogleCloudArtifactRegistryV1.Tag
 
     func deleteTag(
       request: DeleteTagRequest, options: GoogleCloudGax.RequestOptions
@@ -157,19 +157,19 @@ extension Clients {
 
     func createRule(
       request: CreateRuleRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Rule
+    ) async throws -> GoogleCloudArtifactRegistryV1.Rule
 
     func listRules(
       request: ListRulesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListRulesResponse
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListRulesResponse
 
     func getRule(
       request: GetRuleRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Rule
+    ) async throws -> GoogleCloudArtifactRegistryV1.Rule
 
     func updateRule(
       request: UpdateRuleRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Rule
+    ) async throws -> GoogleCloudArtifactRegistryV1.Rule
 
     func deleteRule(
       request: DeleteRuleRequest, options: GoogleCloudGax.RequestOptions
@@ -189,31 +189,31 @@ extension Clients {
 
     func getProjectSettings(
       request: GetProjectSettingsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ProjectSettings
+    ) async throws -> GoogleCloudArtifactRegistryV1.ProjectSettings
 
     func updateProjectSettings(
       request: UpdateProjectSettingsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ProjectSettings
+    ) async throws -> GoogleCloudArtifactRegistryV1.ProjectSettings
 
     func getVpcscconfig(
       request: GetVPCSCConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.VPCSCConfig
+    ) async throws -> GoogleCloudArtifactRegistryV1.VPCSCConfig
 
     func updateVpcscconfig(
       request: UpdateVPCSCConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.VPCSCConfig
+    ) async throws -> GoogleCloudArtifactRegistryV1.VPCSCConfig
 
     func updatePackage(
       request: UpdatePackageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Package
+    ) async throws -> GoogleCloudArtifactRegistryV1.Package
 
     func listAttachments(
       request: ListAttachmentsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListAttachmentsResponse
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListAttachmentsResponse
 
     func getAttachment(
       request: GetAttachmentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Attachment
+    ) async throws -> GoogleCloudArtifactRegistryV1.Attachment
 
     func createAttachment(
       request: CreateAttachmentRequest, options: GoogleCloudGax.RequestOptions
@@ -250,7 +250,7 @@ extension Clients {
 
     public func listDockerImages(
       request: ListDockerImagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListDockerImagesResponse {
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListDockerImagesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -269,12 +269,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.ListDockerImagesResponse.self, from: data)
+        GoogleCloudArtifactRegistryV1.ListDockerImagesResponse.self, from: data)
     }
 
     public func getDockerImage(
       request: GetDockerImageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.DockerImage {
+    ) async throws -> GoogleCloudArtifactRegistryV1.DockerImage {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -289,12 +289,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.DockerImage.self, from: data)
+        GoogleCloudArtifactRegistryV1.DockerImage.self, from: data)
     }
 
     public func listMavenArtifacts(
       request: ListMavenArtifactsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListMavenArtifactsResponse {
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListMavenArtifactsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -312,12 +312,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.ListMavenArtifactsResponse.self, from: data)
+        GoogleCloudArtifactRegistryV1.ListMavenArtifactsResponse.self, from: data)
     }
 
     public func getMavenArtifact(
       request: GetMavenArtifactRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.MavenArtifact {
+    ) async throws -> GoogleCloudArtifactRegistryV1.MavenArtifact {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -332,12 +332,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.MavenArtifact.self, from: data)
+        GoogleCloudArtifactRegistryV1.MavenArtifact.self, from: data)
     }
 
     public func listNpmPackages(
       request: ListNpmPackagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListNpmPackagesResponse {
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListNpmPackagesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -355,12 +355,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.ListNpmPackagesResponse.self, from: data)
+        GoogleCloudArtifactRegistryV1.ListNpmPackagesResponse.self, from: data)
     }
 
     public func getNpmPackage(
       request: GetNpmPackageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.NpmPackage {
+    ) async throws -> GoogleCloudArtifactRegistryV1.NpmPackage {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -375,12 +375,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.NpmPackage.self, from: data)
+        GoogleCloudArtifactRegistryV1.NpmPackage.self, from: data)
     }
 
     public func listPythonPackages(
       request: ListPythonPackagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListPythonPackagesResponse {
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListPythonPackagesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -398,12 +398,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.ListPythonPackagesResponse.self, from: data)
+        GoogleCloudArtifactRegistryV1.ListPythonPackagesResponse.self, from: data)
     }
 
     public func getPythonPackage(
       request: GetPythonPackageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.PythonPackage {
+    ) async throws -> GoogleCloudArtifactRegistryV1.PythonPackage {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -418,7 +418,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.PythonPackage.self, from: data)
+        GoogleCloudArtifactRegistryV1.PythonPackage.self, from: data)
     }
 
     public func importAptArtifacts(
@@ -467,7 +467,7 @@ extension Clients {
 
     public func listRepositories(
       request: ListRepositoriesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListRepositoriesResponse {
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListRepositoriesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -487,12 +487,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.ListRepositoriesResponse.self, from: data)
+        GoogleCloudArtifactRegistryV1.ListRepositoriesResponse.self, from: data)
     }
 
     public func getRepository(
       request: GetRepositoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Repository {
+    ) async throws -> GoogleCloudArtifactRegistryV1.Repository {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -507,7 +507,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.Repository.self, from: data)
+        GoogleCloudArtifactRegistryV1.Repository.self, from: data)
     }
 
     public func createRepository(
@@ -538,7 +538,7 @@ extension Clients {
 
     public func updateRepository(
       request: UpdateRepositoryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Repository {
+    ) async throws -> GoogleCloudArtifactRegistryV1.Repository {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.repository.map({ $0.name }), !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding(
@@ -560,7 +560,7 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.Repository.self, from: data)
+        GoogleCloudArtifactRegistryV1.Repository.self, from: data)
     }
 
     public func deleteRepository(
@@ -585,7 +585,7 @@ extension Clients {
 
     public func listPackages(
       request: ListPackagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListPackagesResponse {
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListPackagesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -605,12 +605,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.ListPackagesResponse.self, from: data)
+        GoogleCloudArtifactRegistryV1.ListPackagesResponse.self, from: data)
     }
 
     public func getPackage(
       request: GetPackageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Package {
+    ) async throws -> GoogleCloudArtifactRegistryV1.Package {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -625,7 +625,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.Package.self, from: data)
+        GoogleCloudArtifactRegistryV1.Package.self, from: data)
     }
 
     public func deletePackage(
@@ -650,7 +650,7 @@ extension Clients {
 
     public func listVersions(
       request: ListVersionsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListVersionsResponse {
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListVersionsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -671,12 +671,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.ListVersionsResponse.self, from: data)
+        GoogleCloudArtifactRegistryV1.ListVersionsResponse.self, from: data)
     }
 
     public func getVersion(
       request: GetVersionRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Version {
+    ) async throws -> GoogleCloudArtifactRegistryV1.Version {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -693,7 +693,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.Version.self, from: data)
+        GoogleCloudArtifactRegistryV1.Version.self, from: data)
     }
 
     public func deleteVersion(
@@ -742,7 +742,7 @@ extension Clients {
 
     public func updateVersion(
       request: UpdateVersionRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Version {
+    ) async throws -> GoogleCloudArtifactRegistryV1.Version {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.version.map({ $0.name }), !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.version.name' is not set or is empty")
@@ -763,12 +763,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.Version.self, from: data)
+        GoogleCloudArtifactRegistryV1.Version.self, from: data)
     }
 
     public func listFiles(
       request: ListFilesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListFilesResponse {
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListFilesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -788,12 +788,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.ListFilesResponse.self, from: data)
+        GoogleCloudArtifactRegistryV1.ListFilesResponse.self, from: data)
     }
 
     public func getFile(
       request: GetFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.File {
+    ) async throws -> GoogleCloudArtifactRegistryV1.File {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -808,7 +808,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.File.self, from: data)
+        GoogleCloudArtifactRegistryV1.File.self, from: data)
     }
 
     public func deleteFile(
@@ -833,7 +833,7 @@ extension Clients {
 
     public func updateFile(
       request: UpdateFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.File {
+    ) async throws -> GoogleCloudArtifactRegistryV1.File {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.file.map({ $0.name }), !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.file.name' is not set or is empty")
@@ -854,12 +854,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.File.self, from: data)
+        GoogleCloudArtifactRegistryV1.File.self, from: data)
     }
 
     public func listTags(
       request: ListTagsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListTagsResponse {
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListTagsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -878,12 +878,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.ListTagsResponse.self, from: data)
+        GoogleCloudArtifactRegistryV1.ListTagsResponse.self, from: data)
     }
 
     public func getTag(
       request: GetTagRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Tag {
+    ) async throws -> GoogleCloudArtifactRegistryV1.Tag {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -898,12 +898,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.Tag.self, from: data)
+        GoogleCloudArtifactRegistryV1.Tag.self, from: data)
     }
 
     public func createTag(
       request: CreateTagRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Tag {
+    ) async throws -> GoogleCloudArtifactRegistryV1.Tag {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -924,12 +924,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.Tag.self, from: data)
+        GoogleCloudArtifactRegistryV1.Tag.self, from: data)
     }
 
     public func updateTag(
       request: UpdateTagRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Tag {
+    ) async throws -> GoogleCloudArtifactRegistryV1.Tag {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.tag.map({ $0.name }), !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.tag.name' is not set or is empty")
@@ -950,7 +950,7 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.Tag.self, from: data)
+        GoogleCloudArtifactRegistryV1.Tag.self, from: data)
     }
 
     public func deleteTag(
@@ -973,7 +973,7 @@ extension Clients {
 
     public func createRule(
       request: CreateRuleRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Rule {
+    ) async throws -> GoogleCloudArtifactRegistryV1.Rule {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -994,12 +994,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.Rule.self, from: data)
+        GoogleCloudArtifactRegistryV1.Rule.self, from: data)
     }
 
     public func listRules(
       request: ListRulesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListRulesResponse {
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListRulesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1017,12 +1017,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.ListRulesResponse.self, from: data)
+        GoogleCloudArtifactRegistryV1.ListRulesResponse.self, from: data)
     }
 
     public func getRule(
       request: GetRuleRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Rule {
+    ) async throws -> GoogleCloudArtifactRegistryV1.Rule {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1037,12 +1037,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.Rule.self, from: data)
+        GoogleCloudArtifactRegistryV1.Rule.self, from: data)
     }
 
     public func updateRule(
       request: UpdateRuleRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Rule {
+    ) async throws -> GoogleCloudArtifactRegistryV1.Rule {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.rule.map({ $0.name }), !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.rule.name' is not set or is empty")
@@ -1063,7 +1063,7 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.Rule.self, from: data)
+        GoogleCloudArtifactRegistryV1.Rule.self, from: data)
     }
 
     public func deleteRule(
@@ -1152,7 +1152,7 @@ extension Clients {
 
     public func getProjectSettings(
       request: GetProjectSettingsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ProjectSettings {
+    ) async throws -> GoogleCloudArtifactRegistryV1.ProjectSettings {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1167,12 +1167,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.ProjectSettings.self, from: data)
+        GoogleCloudArtifactRegistryV1.ProjectSettings.self, from: data)
     }
 
     public func updateProjectSettings(
       request: UpdateProjectSettingsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ProjectSettings {
+    ) async throws -> GoogleCloudArtifactRegistryV1.ProjectSettings {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.projectSettings.map({ $0.name }), !pathVariable0.isEmpty
         else {
@@ -1195,12 +1195,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.ProjectSettings.self, from: data)
+        GoogleCloudArtifactRegistryV1.ProjectSettings.self, from: data)
     }
 
     public func getVpcscconfig(
       request: GetVPCSCConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.VPCSCConfig {
+    ) async throws -> GoogleCloudArtifactRegistryV1.VPCSCConfig {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1215,12 +1215,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.VPCSCConfig.self, from: data)
+        GoogleCloudArtifactRegistryV1.VPCSCConfig.self, from: data)
     }
 
     public func updateVpcscconfig(
       request: UpdateVPCSCConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.VPCSCConfig {
+    ) async throws -> GoogleCloudArtifactRegistryV1.VPCSCConfig {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.vpcscConfig.map({ $0.name }), !pathVariable0.isEmpty
         else {
@@ -1243,12 +1243,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.VPCSCConfig.self, from: data)
+        GoogleCloudArtifactRegistryV1.VPCSCConfig.self, from: data)
     }
 
     public func updatePackage(
       request: UpdatePackageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Package {
+    ) async throws -> GoogleCloudArtifactRegistryV1.Package {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.`package`.map({ $0.name }), !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.package.name' is not set or is empty")
@@ -1269,12 +1269,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.Package.self, from: data)
+        GoogleCloudArtifactRegistryV1.Package.self, from: data)
     }
 
     public func listAttachments(
       request: ListAttachmentsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.ListAttachmentsResponse {
+    ) async throws -> GoogleCloudArtifactRegistryV1.ListAttachmentsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1293,12 +1293,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.ListAttachmentsResponse.self, from: data)
+        GoogleCloudArtifactRegistryV1.ListAttachmentsResponse.self, from: data)
     }
 
     public func getAttachment(
       request: GetAttachmentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleDevtoolsArtifactregistryV1.Attachment {
+    ) async throws -> GoogleCloudArtifactRegistryV1.Attachment {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1313,7 +1313,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleDevtoolsArtifactregistryV1.Attachment.self, from: data)
+        GoogleCloudArtifactRegistryV1.Attachment.self, from: data)
     }
 
     public func createAttachment(
